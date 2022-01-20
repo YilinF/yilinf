@@ -1,0 +1,120 @@
+* {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: hsl(0, 0, 13);
+    font-family: 'Tahoma', sans-serif;
+    font-size: 18px;
+
+    background-image: url(img/cloud-background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+}
+
+#left {
+    font-size: 30px;
+    float: left;
+}
+#right {
+    font-size: 20px;
+}
+
+@media screen and (min-width: 801px) {
+    #left {
+        font-size: 54px;
+    }
+    #right {
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 401px) {
+    #left {
+        font-size: 40px;
+    }
+    #right {
+        font-size: 28px;
+    }
+
+}
+
+.content {
+    padding-left: 13%;
+    padding-right: 13%;
+    padding-bottom: 2%;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    width: 50%;
+}
+
+#left, #right {
+    float: left;
+}
+
+#right > img {
+    float: right;
+}
+
+.intro:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.container {
+    overflow: hidden;
+    background-color: hsl(0, 0%, 26%);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.container a {
+    float: right;
+    display: block;
+    color: #CFD8DC;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.container a:hover {
+    background: hsl(0, 0%, 26%);
+    color: white;
+}
+
+.socials > a {
+    opacity: 80%;
+    transition: 0.3s;
+}
+
+.social > a:hover {
+    opacity: 100%;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #CFD8DC;
+    background-color: hsl(0, 0%, 26%);
+    padding-top: 9px;
+    padding-bottom: 8px;
+    text-align: center;
+}
